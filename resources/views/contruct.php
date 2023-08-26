@@ -6,8 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-
-<a href="/">HOme</a>
-   
+    contruct page
 </body>
 </html>

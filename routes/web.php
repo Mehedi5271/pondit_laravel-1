@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PublicController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,13 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return "welcome";
     return view('welcome');
+  
 });
 
 
-Route::get('/About', function () {
-   return view('about');
-    
-});
+Route::get('/About', [PublicController::class, 'about']);
+Route::get('/mehedi', [PublicController::class, 'contruct']);
 
